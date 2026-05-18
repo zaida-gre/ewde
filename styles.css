@@ -1,0 +1,209 @@
+/* ============================================
+   COLLECTION APP — STARTER STYLESHEET
+   ============================================
+   You can (and should!) change colors, fonts,
+   sizes, and layout to match YOUR theme.
+   ============================================ */
+
+/* ---------- RESET & BASE ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    background-color: #16213e;
+    border-radius: 12px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    color: #e94560;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #a0a0b8;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+    background-color: #16213e;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h2 {
+    font-size: 1.3rem;
+    color: #e94560;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0f3460;
+    padding-bottom: 8px;
+}
+
+/* ---------- STATS ---------- */
+#stats-display {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#stats-display p {
+    background-color: #0f3460;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* ---------- ADD ITEM FORM ---------- */
+#form-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+#form-container label {
+    font-weight: bold;
+    color: #a0a0b8;
+}
+
+#form-container input {
+    padding: 8px 12px;
+    border: 2px solid #0f3460;
+    border-radius: 6px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+#form-container input:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+#add-btn {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.2s;
+}
+
+#add-btn:hover {
+    background-color: #c73652;
+}
+
+/* ---------- SEARCH ---------- */
+#search-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#search-section label {
+    font-weight: bold;
+    color: #a0a0b8;
+}
+
+#search-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 2px solid #0f3460;
+    border-radius: 6px;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+/* ---------- COLLECTION DISPLAY ---------- */
+#collection-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 15px;
+}
+
+/* --- Item Card ---
+   When you build cards in JavaScript, give each
+   one the class "item-card" to pick up this styling.
+   Example:  card.classList.add('item-card');
+*/
+.item-card {
+    background-color: #0f3460;
+    border-radius: 10px;
+    padding: 16px;
+    border-left: 4px solid #e94560;
+    transition: transform 0.15s;
+}
+
+.item-card:hover {
+    transform: translateY(-3px);
+}
+
+.item-card h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.item-card p {
+    font-size: 0.9rem;
+    color: #a0a0b8;
+    margin-bottom: 4px;
+}
+
+/* ---------- UTILITY CLASSES ---------- */
+/* Use these if you want — totally optional */
+
+.hidden {
+    display: none;
+}
+
+.highlight {
+    color: #e94560;
+    font-weight: bold;
+}
+
+.btn-small {
+    padding: 5px 12px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 8px;
+}
+
+.btn-small:hover {
+    background-color: #c73652;
+}
